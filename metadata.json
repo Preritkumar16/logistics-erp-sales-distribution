@@ -1,0 +1,6 @@
+{
+  "name": "Logistics ERP - Sales & Distribution",
+  "description": "Enterprise real-time Sales & Distribution ERP dashboard with live 3PL logistics tracking, inventory management, regional analytics, role-based access control, dark mode, and PDF/CSV reporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-surface: #f8fafc;
+    --bg-surface-lowest: #ffffff;
+    --bg-surface-low: #f1f5f9;
+    --bg-surface-container: #e2e8f0;
+    --bg-surface-high: #cbd5e1;
+    --bg-surface-highest: #94a3b8;
+    --text-on-surface: #0f172a;
+    --text-on-variant: #475569;
+    --border-outline: #e2e8f0;
+    --color-primary: #059669;
+    --color-secondary: #10b981;
+    --color-secondary-container: #34d399;
+    --color-secondary-fixed: #d1fae5;
+    --color-secondary-fixed-dim: #a7f3d0;
+  }
+
+  .dark {
+    --bg-surface: #0b0e14;
+    --bg-surface-lowest: #0f1219;
+    --bg-surface-low: #151921;
+    --bg-surface-container: #1c222d;
+    --bg-surface-high: #242933;
+    --bg-surface-highest: #2d3646;
+    --text-on-surface: #f3f4f6;
+    --text-on-variant: #9ca3af;
+    --border-outline: #242933;
+    --color-primary: #10b981;
+    --color-secondary: #34d399;
+    --color-secondary-container: #059669;
+    --color-secondary-fixed: #1c222d;
+    --color-secondary-fixed-dim: #242933;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.material-symbols-outlined.fill-1,
+.material-symbols-outlined[data-weight="fill"] {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Custom neat scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c6c6cd;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #334155;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #76777d;
+}
+
+/* Typography Helpers */
+.font-label-caps {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.font-data-mono {
+  font-family: 'Inter', monospace, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
